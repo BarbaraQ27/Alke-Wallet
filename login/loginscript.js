@@ -5,6 +5,31 @@ const $submit = document.getElementById("submit"),
     $username = document.getElementById("username"),
     $visible = document.getElementById("visible");
 
+
+//JQuery funcion abrir wallet con credencialesssss
+
+$(document).ready(function() {
+  $('#loginForm').submit(function(event) {
+    event.preventDefault();
+    var username = $('#username').val();
+    var password = $('#password').val();
+
+    // Verificar las credenciales
+    if (username === 'admin' && password === '12345') {
+      // Credenciales válidas, redirigir a la pantalla de wallet
+      window.location.href = '../wallet/menu.html';
+    } else {
+      // Credenciales inválidas, mostrar mensaje de error
+      alert('Usuario o contraseña invalido. Inténtalo de nuevo.');
+    }
+  });
+});
+
+
+
+
+//Hacer visible pass
+
 document.addEventListener("change", (e) => {
     if (e.target === $visible) {
         if ($visible.checked === false) $password.type = "password";
@@ -13,15 +38,6 @@ document.addEventListener("change", (e) => {
     }
 });
 
-//Hacer visible pass
-
-document.addEventListener("click", (e) => {
-    if(e.target === $submit) {
-    if ($password.value !== "" && $username.value !== "") {
-        e.preventDefault();
-        window.location.href = "../wallet/menu.html";
-    }
-}})
 
 //Estilo de login
 

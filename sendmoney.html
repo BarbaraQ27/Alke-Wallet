@@ -3,9 +3,12 @@
 
 <head>
   <title>Wallet - Enviar Dinero</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../wallet/walletstyle.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
 </head>
+
+<body>
 
 <!-- NAVEGADOR -->
 
@@ -17,7 +20,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <ion-icon name="wallet-outline"></ion-icon>
-                <a class="navbar-brand" href="#">Alke Wallet</a>
+                <a class="navbar-brand" href="#">ALKE WALLET</a>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../wallet/menu.html">Dashboard</a>
@@ -29,36 +32,35 @@
                         <a class="nav-link" href="../transactions.html">Transactions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Statistics</a>
+                        <a class="nav-link" href="../sendmoney.html">Send money</a>
                     </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
-
             </div>
             <a class="btn btn-outline-info" href="../index.html" role="button">Logout</a>
         </div>
     </nav>
 
-<body>
+  <!-- Enviar dinero -->  
+
   <div class="container">
-    <h2>Enviar Dinero</h2>
+    <h2>Send money</h2>
     <form>
       <div class="form-group">
-        <label for="searchContact">Buscar en la agenda de transferencias:</label>
         <input type="text" class="form-control" id="searchContact" placeholder="Search contact">
       </div>
-      <button type="submit" class="btn btn-primary">Agregar nuevo contacto</button>
-      <h3>Contactos</h3>
+      <button type="submit" class="btn btn-primary">Add a new contact</button>
+      <h3>Contacts</h3>
       <table class="table table-hover">
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">Nombre</th>
-      <th scope="col">Apellido</th>
-      <th scope="col">Dirección</th>
+      <th scope="col">Fist name</th>
+      <th scope="col">Last name</th>
+      <th scope="col">Email</th>
     </tr>
   </thead>
   <tbody>
@@ -82,13 +84,48 @@
     </tr>
   </tbody>
 </table>
-        <button type="submit" class="btn btn-primary">Enviar dinero</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Send money</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Send money</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+    <div class="form-group">
+        <label for="depositAmount">Amount:</label>
+        <input type="number" class="form-control" id="depositAmount" placeholder="Enter amount">
+      </div>
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
     </form>
-    <a href="../wallet/menu.html" class="btn btn-secondary">Volver al Menú Principal
-    </a>
   </div>
 
-  
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>

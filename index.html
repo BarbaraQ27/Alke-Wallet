@@ -16,6 +16,7 @@
   <body>
     <div class="container-sm">
       <h1>Alke Wallet</h1>
+      <hr>
     </div>
 
     <div class="container">
@@ -24,9 +25,29 @@
       >
         <div class="col-md-3 mb-2 mb-md-0"></div>
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+          <li><a href="index.html" class="nav-link px-2 link-secondary">Home</a></li>
           <li><a href="#" class="nav-link px-2">Features</a></li>
-          <li><a href="#" class="nav-link px-2">About</a></li>
+          <li><a href="#" class="nav-link px-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">About</a></li>
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">About</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+              <div class="modal-body">
+              Alke Wallet es el primer projecto del Bootcamp FrontEnd del programa SENCE 2025-2026, el cual busca desarrollar una web de billetera digital funcional y sencilla de usar, utilizando las herramientas básicas de HTML, CSS, Javascript; como tambien la implementación de kits de herramientas como Boostrap y JQuery.
+              </div>
+              <div class="modal-body">
+              Para revisión de código, ir a mi página de GitHub: https://github.com/BarbaraQ27/Alke-Wallet
+              </div>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+              </div>
+              </div>
+            </div>
+        </div>
         </ul>
         <div class="col-md-3 text-end">
           <a href="../login/login.html" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Login / Sign-up</a>
@@ -97,9 +118,7 @@
         </div>
       </div>
     </div>
-
-
-
+    <hr>
     <footer>
     <p>© 2026 Bárbara Quiroz S.</p>
   </footer>

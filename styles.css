@@ -14,19 +14,25 @@
     align-items: center;
 }
 
-.container{
+.container-sm {
+    color: rgb(2, 87, 66);
+}
+
+.container {
 background: var(--gradient);
 }
 
-.col {
-    align-items: center;
-    text-align: center;
+.col h3 {
+    margin-top: 120px;
 }
 
+.col p {
+    padding: 30px;
+}
 
 footer {
   background: var(--gradient);
-  color: #000000;
+  color: rgb(2, 87, 66);
   padding: 10px;
   text-align: center;
 }

@@ -135,41 +135,22 @@ img {
     justify-content: center;
 }
 
+/* WALLET CONTENT */
 
-/* WALLET SECTION */
-
-
-.wallet {
+.container-wallet {
     margin-top: 100px;
-}
-
-.wallet_balance {
-    text-align: center;
-    padding: 30px;
-}
-
-.wallet_balance h1 {
-    font-size: 60px;
-    font-weight: 700;
-}
-
-.wallet_cta {
-    display: flex;
     align-items: center;
-    gap: 25px;
-    width: fit-content;
-    margin-inline: auto;
-}
-
-.wallet_cta a p {
-    font-size: 20px;
-    margin-top: 50px;
-}
+    justify-self: center;
+    max-width: 400px;
+    height: 150px;
+    border-radius: 20px;
+    background: var(--gradient);
+    }
 
 
 footer {
   background: var(--gradient);
-  color: #000000;
+  color: rgb(2, 87, 66);
   padding: 100px;
   text-align: center;
 }

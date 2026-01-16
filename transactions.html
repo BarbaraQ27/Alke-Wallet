@@ -11,7 +11,7 @@
 <body>
     <!-- NAVEGADOR -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,7 +19,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <ion-icon name="wallet-outline"></ion-icon>
-                <a class="navbar-brand" href="#">Alke Wallet</a>
+                <a class="navbar-brand" href="#">ALKE WALLET</a>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../wallet/menu.html">Dashboard</a>
@@ -31,49 +31,50 @@
                         <a class="nav-link" href="../transactions.html">Transactions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Statistics</a>
+                        <a class="nav-link" href="../sendmoney.html">Send money</a>
                     </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
-
             </div>
-            <a href="../index.html">Logout</a>
+            <a class="btn btn-outline-info" href="../index.html" role="button">Logout</a>
         </div>
     </nav>
+
+    <!-- TABLA -->
 
     <table class="table table-striped table-hover">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Date</th>
+      <th scope="col">Name</th>
+      <th scope="col">Transfer</th>
+      <th scope="col">Comment</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <th scope="row">23.12.2025</th>
+      <td>John Doe</td>
+      <td>100.00</td>
+      <td>Party</td>
     </tr>
     <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
+      <th scope="row">01.01.2026</th>
+      <td>Jacob Thornton</td>
+      <td>25.00</td>
+      <td></td>
     </tr>
     <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
+      <th scope="row">03.01.2026</th>
+      <td>Jane Doe</td>
+      <td>50.00</td>
+      <td>Payment</td>
     </tr>
   </tbody>
 </table>
-
 
 <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
