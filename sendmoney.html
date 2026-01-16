@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Wallet - Enviar Dinero</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<!-- NAVEGADOR -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ion-icon name="wallet-outline"></ion-icon>
+                <a class="navbar-brand" href="#">Alke Wallet</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../wallet/menu.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../wallet/wallet.html">Wallet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../transactions.html">Transactions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Statistics</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+            </div>
+            <a class="btn btn-outline-info" href="../index.html" role="button">Logout</a>
+        </div>
+    </nav>
+
+<body>
+  <div class="container">
+    <h2>Enviar Dinero</h2>
+    <form>
+      <div class="form-group">
+        <label for="searchContact">Buscar en la agenda de transferencias:</label>
+        <input type="text" class="form-control" id="searchContact" placeholder="Search contact">
+      </div>
+      <button type="submit" class="btn btn-primary">Agregar nuevo contacto</button>
+      <h3>Contactos</h3>
+      <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellido</th>
+      <th scope="col">Dirección</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>John</td>
+      <td>Doe</td>
+      <td>XXXXXXXXXXXXXX</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>XXXXXXXXXXXXXX</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Jane</td>
+      <td>Doe</td>
+      <td>XXXXXXXXXXXXXX</td>
+    </tr>
+  </tbody>
+</table>
+        <button type="submit" class="btn btn-primary">Enviar dinero</button>
+    </form>
+    <a href="../wallet/menu.html" class="btn btn-secondary">Volver al Menú Principal
+    </a>
+  </div>
+
+  
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Lora", serif;
+--gradient: linear-gradient(rgb(255, 255, 255), rgb(169, 241, 223));
+}
+
+
+/* GENERAL */
+
+
+.container-fluid{
+  background-color: black;
+  background: var(--gradient);
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container {
+    padding: 50px;
+}
+
+
+/* CARDS */
+
+.card {
+    display: flex;
+    background: linear-gradient(rgb(189, 189, 189), black);
+    border-radius: 20px;
+}
+
+.card * {
+    color: white;
+}
+
+.front {
+    padding: 10px;
+   
+}
+
+.back {
+    padding: 50px 10px;
+}
+
+.card_header-right {
+    width: 50px;
+}
+
+.card_body {
+    display: flex;
+    gap: 20px;
+}
+
+.card_body-chip {
+    width: 30px;
+}
+
+.card_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_footer-right {
+    display: flex;
+    gap: 20px;
+}
+
+.card_footer h5 {
+    font-size: 20px;
+}
+
+.card-add {
+    border-style: outset;
+    padding: 25px;
+    border-radius: 25px;
+    height: 190px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 10px 20px solid black;
+}
+
+/*  FAST PAYMENT */
+
+.fastPayment {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.fastPayment_badge {
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.fastPayment_badge span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.fastPayment_badge div {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+
+/*  RECENT TRANSACTIONS */
+
+
+.recentTransactions_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.transaction_card-image {
+    display: flex;
+    width: 45px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* WALLET SECTION */
+
+
+.wallet {
+    margin-top: 100px;
+}
+
+.wallet_balance {
+    text-align: center;
+    padding: 30px;
+}
+
+.wallet_balance h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.wallet_cta {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.wallet_cta a p {
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+
+footer {
+  background: var(--gradient);
+  color: #000000;
+  padding: 100px;
+  text-align: center;
+}
+
