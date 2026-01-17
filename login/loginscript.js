@@ -1,5 +1,3 @@
-//Interaccion email/pass
-
 const $submit = document.getElementById("submit"),
     $password = document.getElementById("password"),
     $username = document.getElementById("username"),
@@ -9,7 +7,7 @@ const $submit = document.getElementById("submit"),
 //JQuery funcion abrir wallet con credencialesssss
 
 $(document).ready(function() {
-  $('#loginForm').submit(function(event) {
+  $('#login').submit(function(event) {
     event.preventDefault();
     var username = $('#username').val();
     var password = $('#password').val();
